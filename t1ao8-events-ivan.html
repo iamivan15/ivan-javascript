@@ -1,0 +1,122 @@
+
+<body onkeypress="{
+  document.getElementById('myOut1').innerHTML = 
+  String.fromCharCode(event.keyCode) + ' = ' + event.keyCode
+
+}">
+
+<h1 align=center> Events by Ivan</h1>
+
+click <b onClick="{
+  document.getElementById('demo').innerHTML='Hi'
+}"> me </b> .<br><br>
+
+<input type=text value=select_me id="myText1" onselect="{ 
+  document.getElementById('myOut1').innerHTML = 
+  document.all.myText1.value
+}">
+
+
+<h1 onmouseover="style.color='white'" onmouseout="style.color='black'">Mouse over this text</h1>
+
+
+<script>
+function confirmInput() {
+    fname = document.forms[0].fname.value;
+    alert("Hello " + fname + "! have a nice day");
+}
+</script>
+</head>
+
+
+<form onsubmit="confirmInput()" action=>
+Enter your name: <input id="fname" type="text" size="20">
+<input type="submit">
+</form>
+
+</html>
+
+<script>
+function message() {
+    alert("good bye.")
+}
+</script>
+
+<form onreset="message()">
+Enter your name: <input type="text" size="20">
+<input type="reset">
+</form>
+
+<script>
+function myFunction(e) {
+    
+    x = e.clientX;
+    y = e.clientY;
+    
+    coor = "Coordinates: (" + x + "," + y + ")";
+    document.getElementById("demo").innerHTML = coor
+}
+
+function clearCoor() {
+    document.getElementById("demo").innerHTML = "";
+}
+</script>
+</head>
+<body style="margin:0px;">
+
+<div id="coordiv" style="width:1000px;height:500px;border:1px solid" onmousemove="myFunction(event)" onmouseout="clearCoor()"></div>
+
+<p>Mouse over the rectangle above, and get the coordinates of your mouse pointer.</p>
+
+<p id="demo"></p>
+
+<script>
+function bigImg(x) {
+    x.style.height = "64px";
+    x.style.width = "256px";
+}
+
+function normalImg(x) {
+    x.style.height = "64px";
+    x.style.width = "64px";
+}
+</script>
+</head>
+<body>
+
+<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="smiley.gif" alt="Smiley" width="32" height="32">
+
+</body>
+</html>
+
+
+<div id="myOut1">  put your mouse over smily</div>
+
+</body>
+
+<html>
+   <head>
+   
+      <script type="text/javascript">
+         <!--
+            function over() {
+               document.write ("time to refresh");
+            }
+            
+            function out() {
+               document.write ("time to refresh");
+            }
+            
+         //-->
+      </script>
+      
+   </head>
+   <body>
+
+      
+      <div onmouseover="over()" onmouseout="out()">
+         <h2> Try to click me </h2>
+      </div>
+         
+   </body>
+</html>
