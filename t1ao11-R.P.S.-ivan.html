@@ -1,0 +1,110 @@
+<h1 align=center  >T1A11-Rock-Paper-Scissors-Ivan.html</h2>
+
+<script>
+   
+   document.myTotal = 0
+   document.myWin = 0
+   document.myTie = 0
+   document.myLose = 0
+   
+</script>
+
+
+<input type=button value="Rock" onclick="{
+   document.myOutcome = ''
+   document.myRandom = Math.floor(Math.random()*3)+1 
+    document.myTotal += 1
+   
+   if (document.myRandom == 1){
+      document.myOutcome = 'Tie'
+       document.myTie +=1
+   }
+   
+   if (document.myRandom == 2){
+     document.myOutcome = 'Win'
+      document.myWin +=1
+   }
+   
+   if (document.myRandom == 3){
+     document.myOutcome = 'Lose'
+      document.myLose +=1
+   }
+   
+   document.getElementById('myOut').innerHTML = 'Rock ' + document.myOutcome
+   
+       
+   document.all.myTotalOut.value = document.myTotal
+   document.all.myWinOut.value = document.myWin
+   document.all.myTieOut.value = document.myTie
+   document.all.myLoseOut.value = document.myLose
+}">
+
+<input type=button value="Paper" onclick="{
+   document.myOutcome = ''
+   document.myRandom = Math.floor(Math.random()*3)+1 
+   document.myTotal += 1
+   
+   if (document.myRandom == 2){
+      document.myOutcome = 'Tie'
+       document.myTie +=1
+   }
+   
+   if (document.myRandom == 3){
+     document.myOutcome = 'Win'
+      document.myWin +=1
+   }
+   
+   if (document.myRandom == 1){
+     document.myOutcome = 'Lose'
+      document.myLose +=1
+   }
+   
+
+
+   document.getElementById('myOut').innerHTML = 'Paper ' + document.myOutcome
+   
+   
+   document.all.myTotalOut.value = document.myTotal
+   document.all.myWinOut.value = document.myWin
+   document.all.myTieOut.value = document.myTie
+   document.all.myLoseOut.value = document.myLose
+}">
+
+<input type=button value="Scissors" onclick="{
+   document.myOutcome = ''
+   document.myRandom = Math.floor(Math.random()*3)+1 
+    document.myTotal += 1
+   
+   if (document.myRandom == 3){
+      document.myOutcome = 'Tie'
+       document.myTie +=1
+   }
+   
+   if (document.myRandom == 1){
+     document.myOutcome = 'Win'
+      document.myWin +=1
+   }
+   
+   if (document.myRandom == 2){
+     document.myOutcome = 'Lose'
+      document.myLose +=1
+   }
+
+   document.getElementById('myOut').innerHTML = 'Scissors ' + document.myOutcome
+   
+   document.all.myTotalOut.value = document.myTotal
+   document.all.myWinOut.value = document.myWin
+   document.all.myTieOut.value = document.myTie
+   document.all.myLoseOut.value = document.myLose
+}">
+
+Wins: <input type=text id="myWinOut" value=0>
+
+Tie: <input type=text id="myTieOut" value=0>
+
+Lose: <input type=text id="myLoseOut" value=0>
+
+Total: <input type=text id="myTotalOut" value=0>
+
+<div id="myOut">Output here</div
+
