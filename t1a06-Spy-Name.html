@@ -1,0 +1,118 @@
+t1a06-Spy-Name.html
+
+
+<h1 align=center>Spy program by fred</h1>
+
+
+Write your private ideas here<br>
+<textarea id="myArea1" rows=5 cols=70>This is good</textarea><br><br>
+
+<input type=button value=encrypt onclick="{
+   myStart = document.getElementById('myArea1').value.toUpperCase()
+   //alert(myStart)
+   myMax = document.getElementById('myArea1').value.length
+   document.getElementById('myArea2').value = ''
+   
+   for (myLoop = 0; myLoop <= myMax-1; myLoop++ ){
+   myTemp = ''
+   if (myStart[myLoop] == 'A'){myTemp = 'S'}
+   if (myStart[myLoop] == 'B'){myTemp = 'F'}
+   if (myStart[myLoop] == 'C'){myTemp = 'T'}
+   if (myStart[myLoop] == 'D'){myTemp = 'V'}
+   if (myStart[myLoop] == 'E'){myTemp = 'X'}
+   if (myStart[myLoop] == 'J'){myTemp = 'I'}
+   if (myStart[myLoop] == 'K'){myTemp = 'L'} 
+   if (myStart[myLoop] == 'L'){myTemp = 'R'}
+   if (myStart[myLoop] == 'M'){myTemp = 'D'}
+   if (myStart[myLoop] == 'N'){myTemp = 'E'}
+   if (myStart[myLoop] == 'P'){myTemp = 'O'}
+   if (myStart[myLoop] == 'Q'){myTemp = 'P'}
+   if (myStart[myLoop] == 'R'){myTemp = 'Q'}
+   if (myStart[myLoop] == 'U'){myTemp = ';'}
+   if (myStart[myLoop] == 'V'){myTemp = 'C'}
+   if (myStart[myLoop] == 'W'){myTemp = 'U'}
+   if (myStart[myLoop] == 'X'){myTemp = 'M'}
+   if (myStart[myLoop] == 'Y'){myTemp = 'H'}
+   if (myStart[myLoop] == 'Z'){myTemp = 'J'}
+   if (myStart[myLoop] == 'T'){myTemp = 'G'}
+   if (myStart[myLoop] == 'H'){myTemp = 'A'}
+   if (myStart[myLoop] == 'I'){myTemp = 'N'}
+   if (myStart[myLoop] == 'S'){myTemp = 'B'}
+   if (myStart[myLoop] == 'G'){myTemp = 'W'}
+   if (myStart[myLoop] == 'O'){myTemp = 'Z'}
+   if (myStart[myLoop] == 'D'){myTemp = 'K'}
+   if (myStart[myLoop] == 'F'){myTemp = 'Y'}
+   if (myStart[myLoop] == ' '){myTemp = '7'}
+   if (myStart[myLoop] == '3'){myTemp = ' '}
+   if (myStart[myLoop] == '1'){myTemp = '2'}
+   if (myStart[myLoop] == '2'){myTemp = '3'}
+   if (myStart[myLoop] == '4'){myTemp = '5'}
+   if (myStart[myLoop] == '5'){myTemp = '4'}
+   if (myStart[myLoop] == '6'){myTemp = '8'}
+   if (myStart[myLoop] == '8'){myTemp = '0'}
+   if (myStart[myLoop] == '0'){myTemp = '9'}
+   if (myStart[myLoop] == '9'){myTemp = '6'}
+   if (myStart[myLoop] == '7'){myTemp = '*'}
+   
+   document.getElementById('myArea2').value += myTemp
+   }
+   
+}"><br>
+
+The encrypted version to email goes here<br>
+<textarea id="myArea2" rows=5 cols=70></textarea><br><br>
+
+The decryipted reply goes here.<br>
+<input type=button value=decrypt onclick="{
+   myStart = document.getElementById('myArea2').value.toUpperCase()
+  // alert(document.getElementById('myArea2').value.length)
+     myMax = document.getElementById('myArea2').value.length
+   document.getElementById('myArea3').value = ''
+   
+   for (myLoop = 0; myLoop <= myMax-1; myLoop++ ){
+   myTemp = ''
+   if (myStart[myLoop] == 'S'){myTemp = 'A'}
+   if (myStart[myLoop] == 'F'){myTemp = 'B'}
+   if (myStart[myLoop] == 'T'){myTemp = 'C'}
+   if (myStart[myLoop] == 'V'){myTemp = 'D'}
+   if (myStart[myLoop] == 'X'){myTemp = 'E'}
+   if (myStart[myLoop] == 'I'){myTemp = 'J'}
+   if (myStart[myLoop] == 'L'){myTemp = 'K'} 
+   if (myStart[myLoop] == 'R'){myTemp = 'L'}
+   if (myStart[myLoop] == 'D'){myTemp = 'M'}
+   if (myStart[myLoop] == 'E'){myTemp = 'N'}
+   if (myStart[myLoop] == 'O'){myTemp = 'P'}
+   if (myStart[myLoop] == 'P'){myTemp = 'Q'}
+   if (myStart[myLoop] == 'Q'){myTemp = 'R'}
+   if (myStart[myLoop] == ';'){myTemp = 'U'}
+   if (myStart[myLoop] == 'C'){myTemp = 'V'}
+   if (myStart[myLoop] == 'U'){myTemp = 'W'}
+   if (myStart[myLoop] == 'M'){myTemp = 'X'}
+   if (myStart[myLoop] == 'H'){myTemp = 'Y'}
+   if (myStart[myLoop] == 'J'){myTemp = 'Z'}
+   if (myStart[myLoop] == 'G'){myTemp = 'T'}
+   if (myStart[myLoop] == 'A'){myTemp = 'H'}
+   if (myStart[myLoop] == 'N'){myTemp = 'I'}
+   if (myStart[myLoop] == 'B'){myTemp = 'S'}
+   if (myStart[myLoop] == 'W'){myTemp = 'G'}
+   if (myStart[myLoop] == 'Z'){myTemp = 'O'}
+   if (myStart[myLoop] == 'K'){myTemp = 'D'}
+   if (myStart[myLoop] == 'Y'){myTemp = 'F'}
+   if (myStart[myLoop] == '7'){myTemp = ' '}
+   if (myStart[myLoop] == ' '){myTemp = '3'}
+   if (myStart[myLoop] == '2'){myTemp = '1'}
+   if (myStart[myLoop] == '3'){myTemp = '2'}
+   if (myStart[myLoop] == '4'){myTemp = '5'}
+   if (myStart[myLoop] == '5'){myTemp = '4'}
+   if (myStart[myLoop] == '8'){myTemp = '6'}
+   if (myStart[myLoop] == '0'){myTemp = '8'}
+   if (myStart[myLoop] == '9'){myTemp = '0'}
+   if (myStart[myLoop] == '6'){myTemp = '9'}
+   if (myStart[myLoop] == '*'){myTemp = '7'}
+
+   document.getElementById('myArea3').value += myTemp
+ } 
+}"><br>
+
+<textarea id="myArea3" rows=5 cols=70></textarea><br><br>
+
